@@ -1,0 +1,31 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 200%;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+
+.spacer {
+  height: 200px;
+}
+
+.parallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('path/to/your/image.jpg') no-repeat center center;
+  background-size: cover;
+  transform: translateZ(0);
+  z-index: -1;
+}
