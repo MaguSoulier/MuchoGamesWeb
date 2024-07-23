@@ -1,31 +1,114 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 200%;
-  font-family: Arial, sans-serif;
+.isotipo {
+  position: fixed;
+  left: -20%;
+  top: 6%;
+  transform: scale(0.8);
+  z-index: 1000;
+  transition: left 0.5s;
+  cursor: pointer;
 }
 
-.content {
-  height: 100vh;
+.toast {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #f0f0f0;
+  gap: 0; /* Sin espacio entre las filas */
 }
 
-.spacer {
-  height: 200px;
-}
-
-.parallax {
-  position: fixed;
-  top: 0;
-  left: 0;
+.row {
+  display: flex;
   width: 100%;
-  height: 100vh;
-  background: url('path/to/your/image.jpg') no-repeat center center;
-  background-size: cover;
-  transform: translateZ(0);
-  z-index: -1;
+  gap: 0; /* Sin espacio entre los elementos */
+}
+
+.logoTIU {
+  width: 240px;
+  height: 240px;
+}
+
+.logoTIU img {
+  width: 100%;
+  height: 100%;
+}
+
+.promotionalVideo {
+  width: 304px;
+  height: 480px;
+}
+
+.promotionalVideo video {
+  width: 100%;
+  height: 100%;
+}
+
+.screenshot {
+  width: 518px;
+  height: 328px;
+}
+
+.screenshot img {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  width: 448px;
+  height: 196px;
+}
+
+.skinsVideo {
+  width: 280px;
+  height: 280px;
+}
+
+.skinsVideo video {
+  width: 100%;
+  height: 100%;
+}
+
+.description p {
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Para manejar el desbordamiento del texto */
+}
+
+.viewmore {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  margin-right: 50px;
+  padding-left: 6%;
+}
+
+.arrow-viewmore {
+  margin-left: 40px;
+  transform: scale(0.8) translateX(-100%);
+  transition: transform 0.5s;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+}
+
+.viewmore:hover svg {
+  animation: moveArrow 1s linear infinite;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(-100%) scale(0.8);
+  }
+  50% {
+    transform: translateX(100%) scale(0.8);
+  }
+  100% {
+    transform: translateX(-100%) scale(0.8);
+  }
+}
+
+#toast {
+  margin-bottom: 400px;
+  /* Ajusta el valor para el espacio deseado */
 }

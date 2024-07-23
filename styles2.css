@@ -182,6 +182,14 @@ h3 {
 	grid-area: 2 / 7 / 3 / 8;
     margin:9%;
 }
+.div7 { 
+	position: relative;
+	align-self: flex-end;
+	grid-area: 3 / 2 / 4 / 5; 
+}
+.div7 p{
+	padding-left: 0%;
+}
 
 
 
@@ -328,118 +336,140 @@ transform: rotate(-13deg);
 z-index: -1;
 position: relative;
 }
-
+/*{}
 
 /*toast*/
 
 .isotipo {
-    position: fixed;
-    left: -20%;
-    top: 6%;
-    transform: scale(0.8);
-    z-index: 1000;
-    transition: left 0.5s;
-    cursor: pointer; /* Añade esta línea */
-}
-
-.content {
-	height: 2000px;
-	/* Añadir altura para permitir scroll */
-}
-
-.parent2 {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr) repeat(2, 0.5fr) repeat(4, 1fr);
-	grid-template-rows: 1fr 0.5fr repeat(2, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-}
-
-.toast1 {
-	grid-area: 1 / 4 / 2 / 6;
-}
-
-.toast1 img, .toast3 img {
+	position: fixed;
+	left: -20%;
+	top: 6%;
+	transform: scale(0.8);
+	z-index: 1000;
+	transition: left 0.5s;
+	cursor: pointer;
+  }
+  
+  .toast {
+	display: flex;
+	
+	flex-direction: column;
+	align-items: center;
+	gap: 0; /* Sin espacio entre las filas */
+  }
+  
+  .row {
+	display: flex;
 	width: 100%;
-	height: auto;
-	float: right;
-}
-
-.toast2 {
-	grid-area: 1 / 6 / 2 / 9;
-	min-height: 300px;
-}
-
-.toast3 {
-	grid-area: 2 / 2 / 3 / 6;
-	min-height: 300px;
-}
-video {
-	max-width: 100%;
-	object-fit: cover;
-}
-
-.toast4 {
-	grid-area: 2 / 6 / 3 / 9;
-	min-height: 300px;
-}
-
-.toast5 {
-	grid-area: 3 / 4 / 4 / 7;
-	min-height: 300px;
-}
-
-.toast6 {
-	grid-area: 3 / 7 / 5 / 9;
-	min-height: 300px;
-}
-
-
-
-.toast7 { grid-area: 2 / 9 / 3 / 10; }
-.toast8 { grid-area: 3 / 2 / 4 / 3; }
-
-.viewmore {
+	gap: 0; /* Sin espacio entre los elementos */
+  }
+  
+  .logoTIU {
 	position: relative;
+	top: 70px;
+	left: 340px;
+	
+  }
+  
+  .logoTIU img {
+	width: 300px;
+	height: auto;
+  }
+  
+  .promotionalVideo {
+	position: relative;
+	top: 70px;
+	left: 340px;
+  }
+  
+  .promotionalVideo video {
+	width: 400px;
+	height: auto;
+  }
+  
+  .screenshot {
+	position: relative;
+	top: -50px;
+	left: -60px;
+  }
+  
+  .screenshot img {
+	width: 700px;
+	height: auto;
+  }
+  
+  .description {
+	position: relative;
+	top: 80px;
+	left: -50px;
+	width: 600px;
+	height: auto;
+  }
+  
+  .skinsVideo {
+	position: relative;
+	top:-56px;
+	left: 450px;
+  }
+  
+  .skinsVideo video {
+	width: 400px;
+	height: auto;
+  }
+  
+  .description p {
+	width: 100%;
+	height: 100%;
+	overflow: auto; /* Para manejar el desbordamiento del texto */
+  }
+
+  .appleGameOfTheDay{
+	position: relative;
+	top: -40px;
+	left: 470px;
+  }
+  
+  .viewmore {
+	position: relative;
+	width: 200px;
 	display: inline-flex;
 	align-items: center;
 	text-decoration: none;
 	font-size: 20px;
 	color: black;
-	margin-right: 50px;
 	padding-left: 6%;
-}
-
-.arrow-viewmore {
+  }
+  
+  .arrow-viewmore {
 	margin-left: 40px;
 	transform: scale(0.8) translateX(-100%);
 	transition: transform 0.5s;
 	overflow: hidden;
 	align-items: center;
 	display: flex;
-}
-
-.viewmore:hover svg {
+  }
+  
+  .viewmore:hover svg {
 	animation: moveArrow 1s linear infinite;
-}
-
-@keyframes moveArrow {
+  }
+  
+  @keyframes moveArrow {
 	0% {
-		transform: translateX(-100%) scale(0.8);
+	  transform: translateX(-100%) scale(0.8);
 	}
 	50% {
-		transform: translateX(100%) scale(0.8);
+	  transform: translateX(100%) scale(0.8);
 	}
 	100% {
-		transform: translateX(-100%) scale(0.8);
+	  transform: translateX(-100%) scale(0.8);
 	}
-}
-
-#toast {
+  }
+  
+  #toast {
 	margin-bottom: 400px;
 	/* Ajusta el valor para el espacio deseado */
-}
-
+  }
+  
 
 /*prototypes*/
 
@@ -690,7 +720,10 @@ video {
 		font-size: 18px;
 	}
 	p {
-		font-size: 14px;
+		font-size: 12px;
+	}
+	a{
+		font-size: 12px;
 	}
 	h3 {
 		font-family: 'Dazzle Unicase Bold', sans-serif;
@@ -710,6 +743,99 @@ video {
 	.proto2 img{
 		margin-top: -35%;
 	}
+
+
+
+
+	/*toast*/
+
+	  
+	
+	  
+	  .logoTIU {
+		position: relative;
+		top: 70px;
+		left: 170px;
+		
+	  }
+	  
+	  .logoTIU img {
+		width: 171px;
+		height: auto;
+	  }
+	  
+	  .promotionalVideo {
+		position: relative;
+		top: 70px;
+		left: 200px;
+	  }
+	  
+	  .promotionalVideo video {
+		width: 228px;
+		height: auto;
+	  }
+	  
+	  .screenshot {
+		position: relative;
+		top: 30px;
+		left: -29px;
+	  }
+	  
+	  .screenshot img {
+		width: 400px;
+		height: auto;
+	  }
+	  
+	  .description {
+		position: relative;
+		top: 70px;
+		left: -20px;
+		width: 380px;
+		height: auto;
+	  }
+	  
+	  .skinsVideo {
+		position: relative;
+		top:24px;
+		left: 250px;
+	  }
+	  
+	  .skinsVideo video {
+		width: 228px;
+		height: auto;
+	  }
+	  
+	  .description p {
+		width: 100%;
+		height: 100%;
+		overflow: auto; /* Para manejar el desbordamiento del texto */
+	  }
+	
+	  .appleGameOfTheDay{
+		position: relative;
+		top: 24px;
+		left: 260px;
+	  }
+	  
+	  .viewmore {
+		position: relative;
+		width: 228px;
+		display: inline-flex;
+		align-items: center;
+		text-decoration: none;
+		font-size: 20px;
+		color: black;
+		padding-left: 6%;
+	  }
+	  
+	  .arrow-viewmore {
+		margin-left: 40px;
+		transform: scale(0.8) translateX(-100%);
+		transition: transform 0.5s;
+		overflow: hidden;
+		align-items: center;
+		display: flex;
+	  }
 }
 
 ::-webkit-scrollbar {

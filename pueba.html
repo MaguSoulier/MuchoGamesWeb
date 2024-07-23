@@ -3,20 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Scrolling</title>
   <link rel="stylesheet" href="estilosprueba.css">
+  <title>Document</title>
 </head>
 <body>
-  <div class="content">
-    <h1>Parallax Scrolling Example</h1>
-    <p>Scroll down to see the effect.</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="parallax"></div>
-  <div class="content">
-    <div class="spacer"></div>
-    <p>More content...</p>
-  </div>
-  <script src="jsprueba.js"></script>
+  <section id="toast" class="toast">
+    <div class="isotipo">
+      <img src="svg/logo.svg" alt="isotype">
+    </div>
+    <div class="toast">
+      <div class="row">
+        <div class="logoTIU">
+          <img src="Imágenes/LogoTIU-White (1)@2x.png" alt="LogoTIU">
+        </div>
+        <div class="promotionalVideo">
+          <video autoplay loop muted>
+            <source src="videos/toastItUp_promotionalVideoLoop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="row">
+        <div class="screenshot">
+          <img src="0.png" alt="Image 0">
+        </div>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="skinsVideo">
+          <video autoplay loop muted>
+            <source src="videos/toastItUp_skinVideoLoop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="appleGameOfTheDay">
+          <p>Featured as apple's</p>
+          <h3>GAME <br> OF THE<br> DAY</h3>
+          <a class="viewmore" href="https://apps.apple.com/us/app/toast-it-up/id1547616687" target="_blank">
+            <span class="viewmore-text">view more</span>
+            <div class="arrow-viewmore">
+              <svg xmlns="http://www.w3.org/2000/svg" width="45.591" height="20.969" viewBox="0 0 45.591 20.969">
+                <path d="M10.481,53.022,20.969,34.864H0ZM8.665,7.431V36.68H12.3V7.431Z" transform="translate(-7.431 20.969) rotate(-90)"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 </body>
 </html>
