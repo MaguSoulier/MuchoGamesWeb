@@ -1,11 +1,18 @@
 document.addEventListener("scroll", function() {
-    const isotipo = document.querySelector(".isotipo");
-    if (window.scrollY > 900) { // Ajusta este valor según cuándo quieres que aparezca el logo
+  const isotipo = document.querySelector(".isotipo");
+  if (window.scrollY > 900) { // Ajusta este valor según cuándo quieres que aparezca el logo
       isotipo.style.left = '2%'; // Posición final cuando aparece
-    } else {
+  } else {
       isotipo.style.left = '-20%'; // Posición inicial fuera de la pantalla si vuelve al tope
-    }
+  }
+});
+
+document.querySelector(".isotipo").addEventListener("click", function() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Desplazamiento suave
   });
+});
 
   document.addEventListener('DOMContentLoaded', () => {
     const hamburguer = document.getElementById('hamburguer');

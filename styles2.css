@@ -333,14 +333,13 @@ position: relative;
 /*toast*/
 
 .isotipo {
-	position: fixed;
-	left: -20%;
-	/* Posición inicial fuera de la pantalla */
-	top: 6%;
-	transform: scale(0.8);
-	z-index: 1000;
-	transition: left 0.5s;
-	/* Transición suave para la posición */
+    position: fixed;
+    left: -20%;
+    top: 6%;
+    transform: scale(0.8);
+    z-index: 1000;
+    transition: left 0.5s;
+    cursor: pointer; /* Añade esta línea */
 }
 
 .content {
@@ -360,7 +359,7 @@ position: relative;
 	grid-area: 1 / 4 / 2 / 6;
 }
 
-.toast1 img {
+.toast1 img, .toast3 img {
 	width: 100%;
 	height: auto;
 	float: right;
