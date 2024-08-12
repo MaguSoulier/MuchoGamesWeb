@@ -515,14 +515,49 @@ height: 300px;
     width: 100%; /* Asegúrate de que la imagen no se desborde horizontalmente */
 	
 }
-.proto6 img{
+.media-video {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.proto6 img, .proto6 video{
 margin-top: 67px;
 }
+
+.media-video {
+    display: none;
+}
+
+.proto2:hover .media-image,
+.proto3:hover .media-image,
+.proto4:hover .media-image,
+.proto5:hover .media-image,
+.proto6:hover .media-image,
+.proto7:hover .media-image {
+    display: none;
+}
+
+.proto2:hover .media-video,
+.proto3:hover .media-video,
+.proto4:hover .media-video,
+.proto5:hover .media-video,
+.proto6:hover .media-video,
+.proto7:hover .media-video {
+    display: block;
+}
+
 
 #prototypes {
 	margin-bottom: 400px;
 	/* Ajusta el valor para el espacio deseado */
 }
+
+
 
 
 /* Footer */
