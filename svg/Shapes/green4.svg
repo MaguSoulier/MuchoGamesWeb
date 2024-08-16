@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 263 252">
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 286 210.63">
   <defs>
     <style>
       .cls-1 {
@@ -10,12 +10,12 @@
         stroke-width: 72px;
       }
     </style>
-    <linearGradient id="Degradado_sin_nombre_47" data-name="Degradado sin nombre 47" x1="247.84" y1="204.13" x2="2.74" y2="62.62" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Degradado_sin_nombre_47" data-name="Degradado sin nombre 47" x1="0" y1="105.31" x2="286" y2="105.31" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#42d78e"/>
       <stop offset="1" stop-color="#a3fcd0"/>
     </linearGradient>
   </defs>
   <g id="Capa_1-2" data-name="Capa 1">
-    <polygon class="cls-1" points="215 189 126 143 50 216 110 142 36 77 115 133 139 36 125.5 126 227 66 138 134 215 189"/>
+    <polyline class="cls-1" points="122.55 36 36 107.99 250 107.99 176.16 174.63"/>
   </g>
 </svg>
