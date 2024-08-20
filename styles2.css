@@ -193,7 +193,7 @@ h3 {
 
 
 
- @-webkit-keyframes animationorange3 {
+ @-webkit-keyframes animationorange1 {
     0% {
       stroke-dashoffset: 340.0337829589844px;
       stroke-dasharray: 340.0337829589844px;
@@ -210,7 +210,7 @@ h3 {
       }
   }
   
-  @keyframes animationorange3 {
+  @keyframes animationorange1 {
     0% {
       stroke-dashoffset: 340.0337829589844px;
       stroke-dasharray: 340.0337829589844px;
@@ -227,9 +227,9 @@ h3 {
       }
   }
   
-  #orange3 {
-    -webkit-animation: aanimationorange3 4s ease-in-out 0.7s infinite both;
-            animation: animationorange3 4s ease-in-out 0.7s infinite both;
+  #orange1 {
+    -webkit-animation: aanimationorange1 4s ease-in-out 0.7s infinite both;
+            animation: animationorange1 4s ease-in-out 0.7s infinite both;
             position: relative;
 	        width: 100%;
 	        height: 100%;
@@ -239,7 +239,7 @@ h3 {
 
   
 
-@-webkit-keyframes animationgreen3 {
+@-webkit-keyframes animationgreen1 {
 	0% {
 		stroke-dashoffset: 452.06768798828125px;
 		stroke-dasharray: 452.06768798828125px;
@@ -254,7 +254,7 @@ h3 {
 	}
 }
 
-@keyframes animationgreen3 {
+@keyframes animationgreen1 {
 	0% {
 		stroke-dashoffset: 452.06768798828125px;
 		stroke-dasharray: 452.06768798828125px;
@@ -270,8 +270,8 @@ h3 {
 }
 
 #green1 {
-	-webkit-animation: animationgreen3 3s ease-in-out 0.2s infinite both;
-	animation: animationgreen3 3s ease-in-out 0.2s infinite both;
+	-webkit-animation: animationgreen1 3s ease-in-out 0.2s infinite both;
+	animation: animationgreen1 3s ease-in-out 0.2s infinite both;
 	position: relative;
 	margin-top: 52%;
 	margin-left: 73%;
@@ -320,7 +320,6 @@ h3 {
     -webkit-animation: animationpurple1 3.5s ease-in-out 0s infinite both;
             animation: animationpurple1 3.5s ease-in-out 0s infinite both;
 	position: absolute;
-	z-index: -1;
     margin-top: 128%;
 margin-left: -20%;
 width: 77%;
@@ -402,8 +401,6 @@ height: 300px;
     width: 100%; /* Asegúrate de que la imagen no se desborde horizontalmente */
 	
 }
-  
-  
 
   .appleGameOfTheDay{
 	position: relative;
@@ -446,11 +443,280 @@ height: 300px;
 	  transform: translateX(-100%) scale(0.8);
 	}
   }
+
+
   
- 
+  @-webkit-keyframes animationorange2 {
+    0% {
+      stroke-dashoffset: 260.1396484375px;
+      stroke-dasharray: 260.1396484375px;
+    }
   
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 260.1396484375px;
+    }
+
+    100% {
+        stroke-dashoffset: 260.1396484375px;
+        stroke-dasharray: 260.1396484375px;
+      }
+  }
+  
+  @keyframes animationorange2 {
+    0% {
+      stroke-dashoffset: 260.1396484375px;
+      stroke-dasharray: 260.1396484375px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 260.1396484375px;
+    }
+
+    100% {
+        stroke-dashoffset: 260.1396484375px;
+        stroke-dasharray: 260.1396484375px;
+      }
+  }
+
+
+  #orange2{
+	-webkit-animation: animationorange2 3s ease-in-out 0.3s infinite both;
+            animation: animationorange2 3s ease-in-out 0.3s infinite both;
+	position: absolute;
+    margin-top: 4%;
+	margin-left: 70%;
+	width: 11%;
+	z-index: 2;
+  }
+
+  @-webkit-keyframes animatiogreen2 {
+    0% {
+      stroke-dashoffset: 448.0412292480469px;
+      stroke-dasharray: 448.0412292480469px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 448.0412292480469px;
+    }
+
+    100% {
+        stroke-dashoffset: 448.0412292480469px;
+        stroke-dasharray: 448.0412292480469px;
+      }
+  }
+  
+  @keyframes animatiogreen2 {
+    0% {
+      stroke-dashoffset: 448.0412292480469px;
+      stroke-dasharray: 448.0412292480469px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 448.0412292480469px;
+    }
+
+    100% {
+        stroke-dashoffset: 448.0412292480469px;
+        stroke-dasharray: 448.0412292480469px;
+      }
+  }
+
+
+  #green2{
+	-webkit-animation: animatiogreen2 3.5s ease-in-out 1s infinite both;
+            animation: animatiogreen2 3.5s ease-in-out 1s infinite both;
+	position: absolute;
+	margin-top: 25%;
+	margin-left: 16%;
+	width: 11%;
+	z-index: 2;
+  }
+
+  @-webkit-keyframes animationpurple2 {
+    0% {
+      stroke-dashoffset: 151.14315795898438px;
+      stroke-dasharray: 151.14315795898438px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 151.14315795898438px;
+    }
+
+    100% {
+        stroke-dashoffset: 151.14315795898438px;
+        stroke-dasharray: 151.14315795898438px;
+      }
+  }
+  
+  @keyframes animationpurple2 {
+    0% {
+      stroke-dashoffset: 151.14315795898438px;
+      stroke-dasharray: 151.14315795898438px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 151.14315795898438px;
+    }
+
+    100% {
+        stroke-dashoffset: 151.14315795898438px;
+        stroke-dasharray: 151.14315795898438px;
+      }
+  }
+
+
+  #purple2{
+	-webkit-animation: animationpurple2 2s ease-in-out 0.3s infinite both;
+            animation: animationpurple2 2s ease-in-out 0.3s infinite both;
+	position: absolute;
+	margin-top: 66%;
+	margin-left: 80%;
+	width: 7%;
+	z-index: 2;
+  }
 
 /*prototypes*/
+
+@-webkit-keyframes animationpurple3 {
+    0% {
+      stroke-dashoffset: 464.0364990234375px;
+      stroke-dasharray: 464.0364990234375px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 464.0364990234375px;
+    }
+
+    100% {
+        stroke-dashoffset: 464.0364990234375px;
+        stroke-dasharray: 464.0364990234375px;
+      }
+  }
+  
+  @keyframes animationpurple3 {
+    0% {
+      stroke-dashoffset: 464.0364990234375px;
+      stroke-dasharray: 464.0364990234375px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 464.0364990234375px;
+    }
+
+    100% {
+        stroke-dashoffset: 464.0364990234375px;
+        stroke-dasharray: 464.0364990234375px;
+      }
+  }
+
+
+  #purple3{
+	-webkit-animation: animationpurple3 3.5s ease-in-out 0.3s infinite both;
+            animation: animationpurple3 3.5s ease-in-out 0.3s infinite both;
+	position: absolute;
+	margin-top: 8%;
+	margin-left: 9%;
+	width: 12%;
+	z-index: 2;
+  }
+
+  @-webkit-keyframes animationgreen3 {
+    0% {
+      stroke-dashoffset: 225.1666717529297px;
+      stroke-dasharray: 225.1666717529297px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 225.1666717529297px;
+    }
+
+    100% {
+        stroke-dashoffset: 225.1666717529297px;
+        stroke-dasharray: 225.1666717529297px;
+      }
+  }
+  
+  @keyframes animationgreen3 {
+    0% {
+      stroke-dashoffset: 225.1666717529297px;
+      stroke-dasharray: 225.1666717529297px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 225.1666717529297px;
+    }
+
+    100% {
+        stroke-dashoffset: 225.1666717529297px;
+        stroke-dasharray: 225.1666717529297px;
+      }
+  }
+
+
+  #green3{
+	-webkit-animation: animationgreen3 2.5s ease-in-out 0s infinite both;
+            animation: animationgreen3 2.5s ease-in-out 0s infinite both;
+	position: absolute;
+	
+	margin-top: 15%;
+	margin-left: 75%;
+	width: 9%;
+	
+  }
+
+  @-webkit-keyframes animationorange3 {
+    0% {
+      stroke-dashoffset: 602.77685546875px;
+      stroke-dasharray: 602.77685546875px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 602.77685546875px;
+    }
+
+    100% {
+        stroke-dashoffset: 602.77685546875px;
+        stroke-dasharray: 602.77685546875px;
+      }
+  }
+  
+  @keyframes animationorange3 {
+    0% {
+      stroke-dashoffset: 602.77685546875px;
+      stroke-dasharray: 602.77685546875px;
+    }
+  
+    50% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 602.77685546875px;
+    }
+
+    100% {
+        stroke-dashoffset: 602.77685546875px;
+        stroke-dasharray: 602.77685546875px;
+      }
+  }
+
+  #orange3{
+	-webkit-animation: animationorange3 3.5s ease-in-out 1s infinite both;
+            animation: animationorange3 3.5s ease-in-out 1s infinite both;
+	position: absolute;
+	margin-top: 74%;
+	margin-left: 61%;
+	width: 10%;
+	z-index: 20000000000;
+  }
 
 .parent3 {
 	display: grid;
@@ -458,8 +724,7 @@ height: 300px;
 	grid-template-rows: repeat(4, 1fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
-	margin: 10%;
-	margin-right: 20%;
+	margin: 11%;
 	
 }
 
