@@ -29,6 +29,38 @@ document.querySelector(".isotipo").addEventListener("click", function() {
     });
 });
 
+document.querySelector('.contactus').addEventListener('click', function() {
+  document.getElementById('contact-popup').style.display = 'flex';
+});
+
+document.querySelector('.close-popup').addEventListener('click', function() {
+  document.getElementById('contact-popup').style.display = 'none';
+});
+
+// Cerrar el popup al hacer clic fuera de popup-content
+document.getElementById('contact-popup').addEventListener('click', function(event) {
+  if (event.target === this) {
+    this.style.display = 'none';
+  }
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  // Obtén los datos del formulario
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  
+  // Aquí se debería agregar la lógica para enviar el correo
+  // Se puede usar un servicio backend como PHP o una API de terceros como EmailJS
+  
+  alert('Form submitted. Name: ' + name + ', Email: ' + email + ', Message: ' + message);
+  
+  // Ocultar el popup después de enviar el formulario
+  document.getElementById('contact-popup').style.display = 'none';
+});
+
 
 
 

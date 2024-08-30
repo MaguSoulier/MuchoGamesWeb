@@ -37,6 +37,24 @@
            <div class="contactus">
             <h4>Contact<br>us!</h4>
         </div>
+        <div id="contact-popup" class="popup">
+          <div class="popup-content">
+              <span class="close-popup">&times;</span>
+              
+              <div class="form-container">
+                  <form id="contact-form">
+                    <p>You're sending an e-mail to contact@mucho.games</p>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required><br>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required><br>
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea><br>
+                  </form>
+              </div>
+              <button type="submit" form="contact-form" class="submit-button">Send!</button>
+          </div>
+      </div>
         </nav>
     </header>
        
@@ -53,7 +71,8 @@
                     <img src="svg/Landing/Arrow.svg" alt="arrow"> 
                 </div>
                 <div class="div7">
-                    <p>Nice people, good stuff.</p>
+                    <h5>Nice people, good stuff.</h5>
+                    <p>Mucho Games is a small but experienced team based in Uruguay. With almost ten years of joint work - until 2019 Trojan Chicken - they have developed and published educational games, apps and digital content.</p>
                 </div>
                 <div class="div4"> 
                     <svg class="flex-item" id="orange1" data-name="orange1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 400">
@@ -386,7 +405,7 @@
         </section>
 
         <footer class="footer">
-          <p>Brand that have worked with us:</p>
+          <h5>Brand that have worked with us:</h5>
           
           <div class="slider">
             <div class="slide-track">
